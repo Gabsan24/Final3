@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CompuParts</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<script type="text/javascript">
+		
+			function cargarDatos(){ 
+				var inputName = document.getElementById("nombre").value;
+				var inputLast = document.getElementById("apellido").value;
+				var inputPhone = document.getElementById("telefono").value;
+				var inputEmail = document.getElementById("correo").value;
+				var inputText = document.getElementById("mensaje").value;
+				alert(`Nombre: ${inputName}, Apellido: ${inputLast}, Telefono: ${inputPhone}, Email: ${inputEmail}, Mensaje: ${inputText}`)
+
+				
+			}
+
+			
+		
+		</script>
+	</head>
+	<body>
+		<div id="principal">
+			<header>
+				<div id="logo">
+					<img src="logo.png" width="150" height="100">
+				</div>
+	
+				<p id=miDia> </p>
+	
+				<script type="text/javascript">
+				var fecha = new Date(); 
+				
+				var semana0 = "Hoy es Domingo."; 
+				var semana1 = "Hoy es Lunes."; 
+				var semana2 = "Hoy es Martes."; 
+				var semana3 = "Hoy es Miércoles."; 
+				var semana4 = "Hoy es Jueves."; 
+				var semana5 = "Hoy es Viernes."; 
+				var semana6 = "Hoy es Sábado."; 
+				
+				var hoy = fecha.getDay(); 
+				
+				document.getElementById("miDia").textContent = eval("semana" + hoy);
+				</script>
+	
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="quienes.html">Quienes Somos</a></li>
+						<li><a href="productos.html">Productos</a></li>
+						<li><a href="contactenos.html">Contactenos</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="slide">
+				<img src="slider1.jpg" width="900" height="250">
+			</section>
+
+			<section id="categorias">
+				<section id="formulario">
+					<h2 class="titulo-contacto">Envíenos un mensaje</h2>
+					<div id="form">
+						<form name="cotacto" onsubmit="return false">
+							<label for="nombre">Nombre:</label><br>
+							<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"><br>
+
+							<label for="apellido">Apellido:</label><br>
+							<input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"><br>
+
+							<label for="telefono">Telefono:</label><br>
+							<input type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono"><br>
+							
+							<label for="correo">Correo Electronico:</label><br>
+							<input type="text" name="correo" id="correo" placeholder="Ingrese su email"><br>
+
+							<label for="mensaje">Mensaje</label><br>
+							<textarea name="menaje" id="mensaje" placeholder="Ingrese su mensaje"></textarea>
+							<br>
+							<hr>
+							<input type="submit" name="enviar" class="enviar"  onclick="cargarDatos()">
+						</form>
+
+					</div>
+
+					<div id="datos">
+							Teléfono Fijo: <strong>283-6570</strong><br>
+							Teléfono Celular: <strong>6560-4434</strong><br>
+							E-Mail: <strong>Compuparts@hotmail.com</strong><br>
+							Dirección: <strong>Centro comercial El Dorado, Vía Ricardo J. Alfaro, Panamá</strong><br>
+						</div>
+				</section>
+
+				<section id="mapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5976832643846!2d-79.5371599852135!3d9.009115893534632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca842e1c9c91d%3A0xdced0a3bb6b7c8d1!2sCentro%20Comercial%20El%20Dorado!5e0!3m2!1ses-419!2spa!4v1591737153926!5m2!1ses-419!2spa" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></section>
+				
+			</section><!--/categorias-->
+
+			<hr>
+				<footer>
+					<p>
+						Gabriel Sanchez 2016 - Sitio Web con los Derechos Reservados. <br>
+					</p>
+				</footer>
+
+			
+		</div>
+
+	</body>
+</html>

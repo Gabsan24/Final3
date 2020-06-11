@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+<style>
+
+</style>
+</head>
+<body>
+
+
+    <div id="principal">
+        <header>
+            <div id="logo">
+                <img src="logo.png" width="150" height="100">
+            </div>
+
+            <p id=miDia> </p>
+
+            <script type="text/javascript">
+            var fecha = new Date(); 
+            
+            var semana0 = "Hoy es Domingo."; 
+            var semana1 = "Hoy es Lunes."; 
+            var semana2 = "Hoy es Martes."; 
+            var semana3 = "Hoy es Miércoles."; 
+            var semana4 = "Hoy es Jueves."; 
+            var semana5 = "Hoy es Viernes."; 
+            var semana6 = "Hoy es Sábado."; 
+            
+            var hoy = fecha.getDay(); 
+            
+            document.getElementById("miDia").textContent = eval("semana" + hoy);
+            </script>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes.html">Quienes Somos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="slide">
+            <img src="slider1.jpg" width="900" height="250">
+    </section>
+
+    <section id="quie">
+					
+        <h1>¿Quienes Somos?</h1>
+    <p> Compuparts es una empresa conformada por trabajadores y distribuidores apasionados por la tecnología comprometidos en totalidad a brindarle los productos mas cotizados en el mercado de computación a su alcance en Panamá.</p>
+
+        <h2> Misión</h2>
+        <p>Lograr brindarles a nuestros clientes al mayor alcance posible, un abastencimiento constante de nuestro inventario, de los componentes mas actuales y buscados para su equipo, al mejor precio.</p>
+<h2>Visión</h2>
+<p>Ser la empresa líder en el sector de venta de componentes para computadoras en el mercado panameño.</p>
+
+<h2>Valores</h2>
+
+<h3>Responsabilidad</h3>
+Ofrecemos garantias con el tiempo estipulado del fabricante, y aceptamos devoluciones con tal de que nuestro cliente se mantenga seguro de su compra.
+
+<h3>Compromiso</h3>
+Nos mantenemos en constante comunicación con nuestros clientes para tener una retroalimentación constante de nuestros productos en el catálogo.
+
+<center><img src="gabriel.jpg" width="240" height="280">
+<p><i>Gabriel Sanchez, creador y director de CompuParts</i></p></center>
+<br><br>
+    </p>
+    </section>
+
+</body>
+<footer>
+    <p>
+        Gabriel Sanchez 2016 - Sitio Web con los Derechos Reservados. <br>
+    </p>
+</footer>
+</html>

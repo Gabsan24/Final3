@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+<style>
+
+</style>
+</head>
+<body>
+
+
+    <div id="principal">
+        <header>
+            <div id="logo">
+                <img src="logo.png" width="150" height="100">
+            </div>
+
+            <p id=miDia> </p>
+
+            <script type="text/javascript">
+            var fecha = new Date(); 
+            
+            var semana0 = "Hoy es Domingo."; 
+            var semana1 = "Hoy es Lunes."; 
+            var semana2 = "Hoy es Martes."; 
+            var semana3 = "Hoy es Miércoles."; 
+            var semana4 = "Hoy es Jueves."; 
+            var semana5 = "Hoy es Viernes."; 
+            var semana6 = "Hoy es Sábado."; 
+            
+            var hoy = fecha.getDay(); 
+            
+            document.getElementById("miDia").textContent = eval("semana" + hoy);
+            </script>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienes.html">Quienes Somos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="slide">
+            <img src="slider1.jpg" width="900" height="250">
+    </section>
+
+
+<h2 style="text-align:center">Nuestros Productos</h2>
+<div class="card-container">
+  <div class="card">
+    <img src="headset.jpg" alt="headset" style="width:100%">
+    <h1 class="product-title">Razer Kraken Tournament Edition</h1>
+    <p class="price">$59.99</p>
+    <p class="description">El sonido no es solo una mera experiencia , aumenta sus sentidos. Cuando sabes exactamente dónde está posicionado el enemigo, tú eres el que configura la emboscada. 
+  </p>
+    <p><button>Añadir al Carrito</button></p>
+  </div>
+
+  <div class="card">
+      <img src="mouse.jpg" alt="mouse" style="width:300px; height: 300px;">
+      <h1 class="product-title">Mouse optico Logitech G Pro</h1>
+      <p class="price">$139.99</p>
+      <p class="description">Pro Gaming Mouse es creado por Logitech G y eSPORTS profesionales para rendimiento superiores de la competencia Play
+          Avanzado sensor óptico para juegos PMW3366.
+    </p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+
+    <div class="card">
+      <img src="teclado.jpg" alt="teclado" style="width:300px; height: 300px;">
+      <h1 class="product-title">Teclado Corsair K70 Rgb</h1>
+      <p class="price">$70.99</p>
+      <p class="description">Teclado Corsair K70 RGB , mecánico, Multimedia, USB, retroiluminado
+          El Corsair K70 RGB MK.2 es un teclado mecánico premium para juegos diseñado para durar.
+    </p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+
+    <div class="card">
+      <img src="monitor.jpg" alt="monitor" style="width:300px; height: 300px;">
+      <h1 class="product-title">BenQ Zowie XL2411 24" LED 144Hz</h1>
+      <p class="price">$259.99</p>
+      <p class="description">Te presentamos el monitor Zowie XL2411 24" LED 144Hz de Benq, un nuevo monitor e-Sports para competición en PC.
+    </p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+
+    <div class="card">
+      <img src="caja.jpg" alt="caja" style="width:300px; height: 300px;">
+      <h1 class="product-title">NZXT H500 Compact Mid-Tower</h1>
+      <p class="price">$99.99</p>
+      <p class="description">Caja para PC con 2 ventiladores AER F, panel lateral de cristal templado, 2 puertos USB 3.0, compatible con placas base ATX, MicroATX y Mini-ITX, color blanco y negro</p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+
+    <div class="card">
+      <img src="intel.jpg" alt="intel" style="width:100%">
+      <h1 class="product-title">Procesador Intel Core i9-10900X</h1>
+      <p class="price">$799.99</p>
+      <p class="description">Procesador de sobremesa 10 núcleos de hasta 4,7 GHz desbloqueado LGA2066 serie X299 165W</p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+
+    <div class="card">
+      <img src="madre.jpg" alt="madre" style="width:100%">
+      <h1 class="product-title">Asus Prime B450M-A</h1>
+      <p class="price">$199.99</p>
+      <p class="description">Alimentado por procesadores AMD Ryzen AM4 de segunda generación para maximizar la conectividad y la velocidad con NVMe M.2, USB 3.1 Gen2, DDR4 y Gigabit LAN</p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+
+    <div class="card">
+      <img src="aio.jpg" alt="aio" style="width:100%">
+      <h1 class="product-title">Cooler Master MasterLiquid LC120E RGB </h1>
+      <p class="price">$124.99</p>
+      <p class="description">todo en uno CPU refrigeración líquida con bomba de doble cámara para procesadores AMD e Intel</p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+
+    <div class="card">
+      <img src="psu.jpg" alt="psu" style="width:100%">
+      <h1 class="product-title">EVGA Supernova 220-G2-0550</h1>
+      <p class="price">$139.99</p>
+      <p class="description">Certificado 80 plus Gold, con un 91% de eficiencia o más bajo cargas típicas
+          Completamente modular para reducir el desorden y mejorar el flujo de aire. </p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+
+    <div class="card">
+      <img src="ram.jpg" alt="ram" style="width:100%">
+      <h1 class="product-title"> Corsair VENGEANCE RGB PRO 32GB</h1>
+      <p class="price">$154.99</p>
+      <p class="description">Iluminación RGB dinámica multizona.
+          Software de próxima generación. Compatibilidad Intel 100 Series, Intel 200 Series, Intel 300 Series, Intel X299
+          PCB de rendimiento personalizado. SPD Speed-2133 MHz.
+         </p>
+      <p><button>Añadir al Carrito</button></p>
+    </div>
+  </div>
+
+
+<footer>
+    <p>
+        Gabriel Sanchez 2016 - Sitio Web con los Derechos Reservados. <br>
+    </p>
+</footer>
+</body>
+</html>

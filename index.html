@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div id="principal">
+			<header>
+				<div id="logo">
+					<a href="index.html"></a>
+					<img src="logo.png" width="150" height="100">
+				</div>
+
+				<p id=miDia> </p>
+
+				<script type="text/javascript">
+				var fecha = new Date(); 
+				
+				var semana0 = "Hoy es Domingo."; 
+				var semana1 = "Hoy es Lunes."; 
+				var semana2 = "Hoy es Martes."; 
+				var semana3 = "Hoy es Miércoles."; 
+				var semana4 = "Hoy es Jueves."; 
+				var semana5 = "Hoy es Viernes."; 
+				var semana6 = "Hoy es Sábado."; 
+				
+				var hoy = fecha.getDay(); 
+				
+				document.getElementById("miDia").textContent = eval("semana" + hoy);
+				</script>
+
+				<nav class="menu">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="quienes.html">Quienes Somos</a></li>
+						<li><a href="productos.html">Productos</a></li>
+						<li><a href="contactenos.html">Contactenos</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<section id="slide">
+				<img src="slider1.jpg" width="900" height="250">
+			</section>
+			
+			<section id="bienv">
+					
+				<h2>Bienvenidos a CompuParts</h2>
+			<p class="parrafo">
+				Bienvenidos a CompuParts, tu busqueda ha finalizado; en este sitio encontraras la variedad
+				mas amplia de componentes modernos para tu computadora, al mejor precio en Panamá.
+				<br><br>
+			</p>
+		</section>
+
+			<section id="categorias">
+				<section class="uno">
+					<img src="quien.png" width="250" height="150" >
+					<h2>Quienes Somos</h2>
+					<p class="parrafo">
+						Conoce mas sobre nuestra trayectoria en el mercado de componentes para tu computadora.
+				
+					</p>
+					<a href="" class="leer-mas">Leer más</a><br><br>
+				</section>
+				<section class="uno dos">
+					<img src="productos.jpg" width="250" height="150" >
+					<h2>Productos</h2>
+					<p class="parrafo">
+						Visita nuestro catalogo de productos, de seguro encontraras lo que tu necesitas.
+					</p>
+					<a href="" class="leer-mas">Leer más</a><br><br>
+				</section>
+		
+			</section><!--/categorias-->
+
+			<section id="info">
+				
+			<footer>
+				<p>
+					Gabriel Sanchez 2016 - Sitio Web con los Derechos Reservados. <br>
+				</p>
+			</footer>
+
+			
+		</div>
+
+	</body>
+</html>
